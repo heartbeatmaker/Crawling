@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="283a8870-f89d-444f-bdca-63d41c44fd2f" name="aws_server" url="http://18.191.197.32">
-        <fileTransfer host="18.191.197.32" port="22" privateKey="D:\yonju.ppk" rootFolder="/usr/crawling_server" accessType="SFTP" keyPair="true">
+      <webServer id="283a8870-f89d-444f-bdca-63d41c44fd2f" name="aws_server" url="http://18.191.0.17">
+        <fileTransfer host="18.191.0.17" port="22" privateKey="D:\yonju.ppk" rootFolder="/usr/crawling_server" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

@@ -36,11 +36,14 @@ app.get('/crawling', (req, res) => {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
 
+        console.log('url 1'+ page.url());
 
         //quora의 book 페이지로 가라
         //로그인 안한 상태로 이 페이지 들어가야함!!! 로그인 하면 개인 추천글 뜸
         //related Topics 를 genre로 구분해서 모두 저장하기
-        await page.goto('https://intoli.com/blog/saving-images/');
+        await page.goto('https://www.quora.com/topic/Books');
+
+        console.log('url 2'+ page.url());
 
         //화면이 전환될 때까지 0.5초 기다리기
         await page.waitFor(500);
@@ -117,8 +120,8 @@ app.get('/crawling', (req, res) => {
 
 
 //서버 실행
-http.listen(8080, () => {// app.listen이 아닌 http.listen임에 유의한다. 무슨뜻?
-    console.log('Connected at 8080');
+http.listen(10005, () => {// app.listen이 아닌 http.listen임에 유의한다. 무슨뜻?
+    console.log('Connected at 10005');
 });
 
 
